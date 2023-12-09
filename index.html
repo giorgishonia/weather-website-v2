@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Z+Q+Jt0V2bNBveLmN1XtUDf1nxmMc7VrJ5kHib3MQ3lWfu9RQgcW2sYvr4KULtjKo6T8/jRftjIcO6m9l7imMg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     
+    <title>weather website</title>
+</head>
+<body>
+
+       <div class="custom-search">
+            <input type="text" class="custom-search-input" id="locationInput" placeholder="Enter location"></input>
+            <button class="custom-search-botton" id="searchButton"><i class="fas fa-search"></i></button>
+            <div id="errorNotification"></div>
+
+        </div>
+<main>
+    <div class="left-column">
+        <div class="main-content">
+            
+            <div class="weather-columns">
+                <!-- ========== this is the first row ========== -->
+                <div class="column-layout">
+                    <div class="saxelwodeba" id="cityAndCountry"></div>
+                    <div id="dayNightIndicator"></div>
+                    <div id="temperature"></div>
+                </div>
+                    <img id="weatherIcon">
+            </div>
+
+            <div class="hourly-forecast">
+                <div class="todays-txt">TODAY'S FORECAST</div>
+                <div class="todays-layout">                  
+                <div class="weather-block" id="6am">
+                    <div class="hour">6:00AM</div>
+                    <img id="6amIcon" class="weather-icon">
+                    <div class="hourstyle" id="6amTemp"></div>
+                    </div>
+                    <div class="weather-block" id="9am">
+                    <div class="hour">9:00AM</div>
+                    <img id="9amIcon" class="weather-icon">
+                    <div class="hourstyle" id="9amTemp"></div>
+                    </div>
+                    <div class="weather-block" id="12pm">
+                    <div class="hour">12:00PM</div>
+                    <img id="12pmIcon" class="weather-icon">
+                    <div class="hourstyle" id="12pmTemp"></div>
+                    </div>
+                    <div class="weather-block" id="3pm">
+                    <div class="hour">3:00PM</div>
+                    <img id="3pmIcon" class="weather-icon">
+                    <div class="hourstyle" id="3pmTemp"></div>
+                    </div>
+                    <div class="weather-block" id="6pm">
+                    <div class="hour">6:00PM</div>
+                    <img id="6pmIcon" class="weather-icon">
+                    <div class="hourstyle" id="6pmTemp"></div>
+                    </div>
+                    <div class="weather-block" id="9pm">
+                    <div class="hour">9:00PM</div>
+                    <img id="9pmIcon" class="weather-icon">
+                    <div class="hourstyle" id="9pmTemp"></div>
+                    </div>
+            </div></div>
+        <div class="weather-conditions">
+            <div class="conditions-txt">AIR CONDITIONS</div>
+                    <div class="traki">   
+                        <div class="erti">
+                            <p><span>🌡</span> REAL FEEL</p>
+                            <div id="feelsLike"></div>
+                        </div>
+                        <div class="erti">                <p><span>🌢</span> HUMIDITY</p>
+                <div id="humidity"></div> </div>
+                            <div class="erti">                <p><span>꩜</span> WIND SPEED</p>
+                <div id="windSpeed"></div></div>
+                                <div class="erti">                <p><span>☁︎</span> CLOUD COVER</p>
+                <div id="cloudCover"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="right-column">  
+            <div class="sevenday-text">7-DAY FORECAST</div>
+
+            <div class="bottom-side">
+                <ul>
+                    <div class="sameone" id="datetimeEpochMain"></div>
+                    <img id="mainIcon" class="weather-icon">
+                    <div id="mainTemp"></div>
+                </ul>
+                
+                <ul>
+                    <div class="sameone" id="datetimeEpoch"></div>
+                    <img id="icon" class="weather-icon">
+                    <div id="temp1"></div>
+                </ul>
+                
+                <ul>
+                    <div class="sameone"  id="datetimeEpoch2"></div>
+                    <img id="icon2" class="weather-icon">
+                    <div id="temp2"></div>
+                </ul>
+                
+                <ul>
+                    <div class="sameone" id="datetimeEpoch3"></div>
+                    <img id="icon3" class="weather-icon">
+                    <div id="temp3"></div>
+                </ul>
+            
+                <ul>
+                    <div id="datetimeEpoch4" class="sameone"></div>
+                    <img id="icon4" class="weather-icon">
+                    <div id="temp4"></div>
+                </ul>
+                
+                <ul>
+                    <div id="datetimeEpoch5" class="sameone"></div>
+                    <img id="icon5" class="weather-icon">
+                    <div id="temp5"></div>
+                </ul>
+            
+                <ul>
+                    <div id="datetimeEpoch6" class="sameone"></div>
+                    <img id="icon6" class="weather-icon">
+                    <div id="temp6"></div>
+                </ul>
+</div>
+</main>
+           
+</body>
+<script src="script.js"></script>
+</html>
