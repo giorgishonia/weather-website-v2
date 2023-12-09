@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set default location to Tokyo when the page loads
     locationInput.value = 'Tokyo';
 
+        const themeSwitch = document.getElementById('themeSwitch');
+        const body = document.body;
+
+        themeSwitch.addEventListener('change', function () {
+            body.classList.toggle('dark-theme', themeSwitch.checked);
+        });
     // Call the function to fetch and display weather data for Tokyo
     handleSearch();
 

@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Z+Q+Jt0V2bNBveLmN1XtUDf1nxmMc7VrJ5kHib3MQ3lWfu9RQgcW2sYvr4KULtjKo6T8/jRftjIcO6m9l7imMg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
      
     <title>weather website</title>
 </head>
 <body>
+    <div class="theme-toggle" id="themeToggle">
+  <label class="toggle-switch">
+    <input type="checkbox" id="themeSwitch">
+    <span class="slider round"></span>
+  </label>
+</div>
 
-       <div class="custom-search">
+<div class="morcha">
+    <div class="custom-search">
             <input type="text" class="custom-search-input" id="locationInput" placeholder="Enter location"></input>
             <button class="custom-search-botton" id="searchButton"><i class="fas fa-search"></i></button>
             <div id="errorNotification"></div>
-
-        </div>
+            
+    </div>
+</div>
 <main>
     <div class="left-column">
         <div class="main-content">
