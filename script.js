@@ -2,23 +2,53 @@ document.addEventListener('DOMContentLoaded', function () {
     const locationInput = document.getElementById('locationInput');
     const searchButton = document.getElementById('searchButton');
 
-    // Set default location to Tokyo when the page loads
     locationInput.value = 'Tokyo';
-
-        const themeSwitch = document.getElementById('themeSwitch');
-        const body = document.body;
-
-        themeSwitch.addEventListener('change', function () {
-            body.classList.toggle('dark-theme', themeSwitch.checked);
-        });
-    // Call the function to fetch and display weather data for Tokyo
     handleSearch();
 
-    searchButton.addEventListener('click', handleSearch);
+    // searchButton.addEventListener('click', handleSearch);
     locationInput.addEventListener('keyup', function (event) {
         if (event.key === 'Enter') {
             handleSearch();
         }
+    });
+
+    const toggleSwitch = document.querySelector('.toggle-input');
+    const body = document.body;
+    const todaysLayout = document.querySelector('.todays-layout');
+    const weatherConditions = document.querySelector('.weather-conditions');
+    const rightColumn = document.querySelector('.right-column');
+    const hourlyForecast = document.querySelector('.hourly-forecast');
+    const customSearchInput = document.querySelector('.custom-search-input');
+    // const customSearchButton = document.querySelector('.custom-search-botton');
+
+    const textElements = document.querySelectorAll('.hour, p, .sameone, .hourstyle, #dayNightIndicator');
+    const bgElements = document.querySelectorAll('.custom-search-input, .custom-search-botton');
+    toggleSwitch.addEventListener('change', function () {
+        const isDarkTheme = toggleSwitch.checked;
+
+        body.classList.toggle('dark-theme', isDarkTheme);
+        todaysLayout.classList.toggle('dark-theme', isDarkTheme);
+        weatherConditions.classList.toggle('dark-theme', isDarkTheme);
+        rightColumn.classList.toggle('dark-theme', isDarkTheme);
+        hourlyForecast.classList.toggle('dark-theme', isDarkTheme);
+        customSearchInput.classList.toggle('dark-theme', isDarkTheme);
+        // customSearchButton.classList.toggle('dark-theme', isDarkTheme);
+        const toggleIcon = document.getElementById('toggleIcon')
+        toggleIcon.classList.toggle('dark-theme', isDarkTheme);
+
+        textElements.forEach(element => {
+            element.style.color = isDarkTheme ? 'white' : '';
+            element.style.opacity = isDarkTheme ? '0.8' : '';
+        });
+
+        bgElements.forEach(element => {
+            element.style.color = isDarkTheme ? 'white' : '';
+            element.style.backgroundColor = isDarkTheme ? '#202B3B' : '';
+        });
+        toggleIcon.forEach(element =>{
+            element.style.filter = isDarkTheme ? "invert(100%)" : '';
+            element.style.transform = isDarkTheme ? "rotate(180deg)" : '';
+        });
     });
 
     function handleSearch() {
@@ -30,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const feelsLike = document.getElementById('feelsLike');
         const weatherDescription = document.getElementById('weatherDescription');
         const weatherIcon = document.getElementById('weatherIcon');
-        const notif = document.getElementById('errorNotification');
+        // const notif = document.getElementById('errorNotification');
         const humidity = document.getElementById('humidity');
         const windSpeed = document.getElementById('windSpeed');
         const cloudCover = document.getElementById('cloudCover');
@@ -80,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feelsLike.innerHTML = `${data.currentConditions.feelslike} %`;
             // weatherDescription.innerHTML = `${data.description}`;
             weatherIcon.src = `icons/${data.currentConditions.icon}.png`;
-            notif.innerHTML = "";
+            // notif.innerHTML = "";
             humidity.innerHTML = `${data.currentConditions.humidity} %`;
             cloudCover.innerHTML = `${data.currentConditions.cloudcover} %`;
             windSpeed.innerHTML = `${data.currentConditions.windspeed} km/h`;
@@ -183,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 displayWeatherData(weatherData, location);
             })
             .catch(error => {
-                notif.innerHTML = 'Provided location is incorrect';
+                // notif.innerHTML = 'Provided location is incorrect';
 
                 console.error('Error fetching weather data:', error);
                 clearWeatherData();
