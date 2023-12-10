@@ -264,6 +264,15 @@ p{
             right: 84px;
             height: 27%;
     }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+    
+        body {
+            position: relative
+        }
 }
 
 @media only screen and (max-width: 810px){
