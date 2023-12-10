@@ -16,6 +16,7 @@ body{
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     transition: 200ms;
 }
 
@@ -263,6 +264,10 @@ p{
         top: 33px;
             right: 84px;
             height: 27%;
+    }
+    body{
+        overflow-x: hidden;
+        overflow-y: visible;
     }
 }
 
