@@ -16,6 +16,7 @@ body{
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     transition: 200ms;
 }
 
@@ -211,19 +212,20 @@ p{
     .right-column{
         width: 90%;
         margin: 0;
+        height: fit-content;
     }
     .left-column{
         width: 90%;
     }
 
     .todays-layout{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    font-size: small;
-    padding: 35px;
-    height: fit-content;
-    margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        font-size: small;
+        padding: 35px;
+        height: fit-content;
+        margin-top: 0px;
     }
 
     .traki {
@@ -263,6 +265,12 @@ p{
         top: 33px;
             right: 84px;
             height: 27%;
+    }
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative
     }
 }
 
