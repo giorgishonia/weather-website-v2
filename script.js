@@ -198,12 +198,12 @@ document.addEventListener('DOMContentLoaded', function () {
             datetime4 = `${new Date(data.days[4].datetime)}`;
             datetime5 = `${new Date(data.days[5].datetime)}`;
             datetime6 = `${new Date(data.days[6].datetime)}`;
-            datetimeEpoch.innerHTML = `${datetime[0] + datetime[1] + datetime[2]}&nbsp;&nbsp;`;
-            datetimeEpoch2.innerHTML = `${datetime2[0] + datetime2[1] + datetime2[2]}&nbsp;&nbsp;`;
-            datetimeEpoch3.innerHTML = `${datetime3[0] + datetime3[1] + datetime3[2]}&nbsp;&nbsp;`;
-            datetimeEpoch4.innerHTML = `${datetime4[0] + datetime4[1] + datetime4[2]}&nbsp;&nbsp;`;
-            datetimeEpoch5.innerHTML = `${datetime5[0] + datetime5[1] + datetime5[2]}&nbsp;&nbsp;`;
-            datetimeEpoch6.innerHTML = `${datetime6[0] + datetime6[1] + datetime6[2]}&nbsp;&nbsp;`;
+            datetimeEpoch.innerHTML = `${datetime[0] + datetime[1] + datetime[2]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
+            datetimeEpoch2.innerHTML = `${datetime2[0] + datetime2[1] + datetime2[2]}&nbsp;&nbsp;&nbsp;&nbsp;`;
+            datetimeEpoch3.innerHTML = `${datetime3[0] + datetime3[1] + datetime3[2]}&nbsp;&nbsp;&nbsp;&nbsp;`;
+            datetimeEpoch4.innerHTML = `${datetime4[0] + datetime4[1] + datetime4[2]}&nbsp;&nbsp;&nbsp;`;
+            datetimeEpoch5.innerHTML = `${datetime5[0] + datetime5[1] + datetime5[2]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
+            datetimeEpoch6.innerHTML = `${datetime6[0] + datetime6[1] + datetime6[2]}&nbsp;&nbsp;&nbsp;&nbsp;`;
             datetimeEpochMain.innerHTML = "Today"
         }
         
