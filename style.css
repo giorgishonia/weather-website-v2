@@ -55,7 +55,6 @@ width: 70%;
 
 .right-column{
     background-color: #EAECEF;
-    height: 90vh;
     padding: 0px;
     border-radius: 15px;
     width: 30%;
@@ -105,7 +104,6 @@ ul{
     background-color: #EAECEF;
     border-radius: 15px;
     height: fit-content;
-    margin-top: 40px;
 }
 
 
@@ -235,7 +233,10 @@ p{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-around;
         font-size: small;
-        padding: 20px;
+        padding-bottom: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+}
         height: fit-content;
     }
     .weather-block{
@@ -411,7 +412,7 @@ html body main {
 div.todays-txt {
     text-align: left;
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
     font-weight: 900;
     font-family: Montserrat;
 }
