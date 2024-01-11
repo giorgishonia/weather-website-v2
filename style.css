@@ -3,7 +3,7 @@
 }
 
 #weatherIcon{
-    max-width: 150px;
+    max-width: 133px;
 }
 
 hr{
@@ -12,9 +12,9 @@ hr{
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    /*! margin: 20px; */
+    padding: 7px;
+    /*! width: 100%; */
     overflow: hidden;
         transition: 200ms;
 }
@@ -34,10 +34,10 @@ body.dark-theme {
 
 main{
     display: flex;
-    width: 100%;
+    /*! width: 100%; */
     gap: 20px;
-    justify-content: space-between;
-    height: 90vh;
+    /*! justify-content: space-between; */
+    /*! height: 90vh; */
 }
 
 .left-column{
@@ -49,25 +49,27 @@ width: 70%;
     flex-direction: column;
     gap: 20px;
     height: 100%;
-    justify-content: space-between;
+    /*! justify-content: space-between; */
     
 }
 
 .right-column{
     background-color: #EAECEF;
+    /*! height: 90vh; */
     padding: 0px;
     border-radius: 15px;
     width: 30%;
-    margin-top: 20px;
+    /*! margin-top: 20px; */
 }
 
 .bottom-side{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
+    /*! gap: 11px; */
+    justify-content: space-evenly;
     margin-right: 20px;
-    height: 88%;
+    height: 91%;
+    /*! margin-top: -25px; */
 }
 
 
@@ -93,17 +95,19 @@ ul{
     justify-content: space-around;
     padding-left: 0px;
     align-items: center;
+    margin-top: 10px;
 }
 
 .todays-layout{
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 18px;
     font-size: small;
-    padding: 20px;
+    padding: 18px;
     background-color: #EAECEF;
     border-radius: 15px;
     height: fit-content;
+    margin-top: 8px;
 }
 
 
@@ -113,7 +117,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: ;
+    /*! height: 100%; */
 }
 
 #weatherDescription{
@@ -127,8 +131,9 @@ flex-direction: column;
 }
 .traki{
     display: flex;
-    padding: 20px;
+    padding: 8px;
     justify-content: space-between;
+    padding-top: 0px;
 }
 .conditions-txt{
     text-align: left;
@@ -144,13 +149,14 @@ flex-direction: column;
   font-family: Montserrat;
   margin-left: 0px;
   padding: 20px;
+  font-weight: bold;
 }
 
 .weather-columns{
     display: flex;
-    padding: 20px;
+    padding: 0px;
     justify-content: space-around;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .column-layout{
@@ -233,10 +239,7 @@ p{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-around;
         font-size: small;
-        padding-bottom: 0;
-        padding-right: 20px;
-        padding-left: 20px;
-}
+        padding: 20px;
         height: fit-content;
     }
     .weather-block{
@@ -287,7 +290,7 @@ p{
 @media screen and (min-width: 800px) {
 
         #cityAndCountry {
-                font-size: 30px;
+                font-size: 27px;
             }
 }
 
@@ -344,7 +347,6 @@ flex-direction: row;
 .hourly-forecast{
     background-color: #EAECEF;
     border-radius: 15px;
-    height: 0;
     
 }
 
@@ -358,7 +360,7 @@ flex-direction: row;
 
 .traki{
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
     align-items: center;
 
 }
@@ -403,6 +405,7 @@ div.bottom-side {
     font-size: 16px;
     margin-left: 20px;
     font-weight: 300;
+    margin-top: -11px;
 }
 
 html body main {
@@ -412,7 +415,7 @@ html body main {
 div.todays-txt {
     text-align: left;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     font-weight: 900;
     font-family: Montserrat;
 }
@@ -429,7 +432,7 @@ p {
 
 div.sevenday-text {
     font-family: Montserrat;
-    font-weight: 500;
+    /*! font-weight: 500; */
 }
 
 div.conditions-txt {
@@ -452,7 +455,7 @@ div.hour{
 }
 
 .right-column div{
-    font-weight: 700;
+    /*! font-weight: 700; */
 }
 
 .sameone{
@@ -480,7 +483,7 @@ div.hour{
 .morcha {
     width: 72%;
     position: relative;
-    margin-top: 10px;
+    /*! margin-top: 10px; */
 }
 
 .mtavari{
